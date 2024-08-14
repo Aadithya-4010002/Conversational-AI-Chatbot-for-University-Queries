@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chatbot</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="static/css/style.css">
+	</head>
+	<body>
+		<style>
+			body,html{
+				height: 100%;
+				margin: 0;
+				background: rgb(55, 59, 79);
+				background: -webkit-linear-gradient(to right, rgb(22, 109, 172), rgb(26, 74, 157), rgb(28, 77, 137));
+				background: linear-gradient(to right, rgb(37, 57, 71), rgb(39, 53, 68), rgb(34, 62, 85));
+			}
+
+			.chat{
+				margin-top: auto;
+				margin-bottom: auto;
+			}
+			.card{
+				height: 98%;
+				width: auto;
+				border-radius: 15px !important;
+				background-color: #00000099 !important;
+			}
+			.contacts_body{
+				padding:  0.75rem 0 !important;
+				overflow-y: auto;
+				white-space: nowrap;
+			}
+			.msg_card_body{
+				overflow-y: auto;
+			}
+			.card-header{
+				border-radius: 22px 22px 0 0 !important;
+				border-bottom: 0 !important;
+			}
+			.card-footer{
+				border-radius: 0 0 20px 20px !important;
+				border-top: 0 !important;
+			}
+			.container{
+				align-content: center !important;
+			}
+			.search{
+				border-radius: 15px 0 0 15px !important;
+				background-color: rgba(0,0,0,0.3) !important;
+				border:0 !important;
+				color:white !important;
+			}
+			.search:focus{
+				 box-shadow:none !important;
+			   outline:0px !important;
+			}
+			.type_msg{
+				background-color: #090909c5 !important;
+				border-radius:55px !important;
+				border-color: #090909c5 !important;
+				height: 55px !important;
+				overflow-y: auto;
+			}
+				.type_msg:focus{
+				 box-shadow:none !important;
+			   outline:0px !important;
+			}
+			.attach_btn{
+				border-radius: 15px 0 0 15px !important;
+				background-color: rgba(0,0,0,0.3) !important;
+				border:0 !important;
+				color: white !important;
+				cursor: pointer;
+			}
+			.send_btn{
+				border-radius: 25px !important;
+				background-color: #1b65ba00 !important;
+				border:0 !important;
+				color: rgba(255, 255, 255, 0.574) !important;
+				cursor: pointer;
+			}
+			.search_btn{
+				border-radius: 0 15px 15px 0 !important;
+				background-color: rgba(0,0,0,0.3) !important;
+				border:0 !important;
+				color: white !important;
+				cursor: pointer;
+			}
+			.contacts{
+				list-style: none;
+				padding: 0;
+			}
+			.contacts li{
+				width: 100% !important;
+				padding: 5px 10px;
+				margin-bottom: 15px !important;
+			}
+			.active{
+				background-color: rgba(0,0,0,0.3);
+			}
+			.user_img{
+				height: 70px;
+				width: 70px;
+				border:1.5px solid #00000084;
+
+			}
+			.user_img_msg{
+				height: 40px;
+				width: 40px;
+				border:1.5px solid #00000084;
+
+			}
+			.img_cont{
+				position: relative;
+				height: 70px;
+				width: 70px;
+			}
+			.img_cont_msg{
+				height: 40px;
+				width: 40px;
+			}
+			.online_icon{
+				position: absolute;
+				height: 15px;
+				width:15px;
+				background-color: #46a139;
+				border-radius: 50%;
+				bottom: 0.2em;
+				right: 0.4em;
+				border:1.5px solid #46a139;
+			}
+			.offline{
+				background-color: #c23616 !important;
+			}
+			.user_info{
+				margin-top: 8px;
+				margin-bottom: auto;
+				margin-left: 15px;
+			}
+			.user_info span{
+				font-family: 'Times New Roman', Times, serif; 
+				font-weight: bold;
+				font-size: 20px;
+				color: rgb(255, 255, 255);
+			}
+			.user_info p{
+				font-family: 'Times New Roman', Times, serif; 
+				font-size: 16px;
+				color: #fff;
+			}
+			.video_cam{
+				margin-left: 50px;
+				margin-top: 5px;
+			}
+			.video_cam span{
+				color: white;
+				font-size: 20px;
+				cursor: pointer;
+				margin-right: 20px;
+			}
+			.msg_cotainer {
+				margin-top: auto;
+				margin-bottom: auto;
+				margin-left: 10px;
+				border-radius: 20px;
+				background-color: #132940f0;
+				padding: 10px;
+				position: relative;
+				color: #ccccccf8; /* Change this to your desired color */
+			}
+
+			.msg_cotainer_send {
+				margin-top: auto;
+				margin-bottom: 3px;
+				margin-right: 10px;
+				border-radius: 20px;
+				background-color: #1f2327f0;
+				padding: 10px;
+				position: relative;
+				color: #ccc; /* Change this to your desired color */
+			}
+
+			.msg_time{
+				position: absolute;
+				left: 7px;
+				bottom: -20px;
+				color: rgba(255,255,255,0.5);
+				font-size: 10px;
+			}
+			.msg_time_send{
+				position: absolute;
+				right: 7px;
+				bottom: -20px;
+				color: rgba(255,255,255,0.5);
+				font-size: 10px;
+			}
+			.msg_head{
+				position: relative;
+			}
+			#action_menu_btn{
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				color: white;
+				cursor: pointer;
+				font-size: 20px;
+			}
+			.action_menu{
+				z-index: 1;
+				position: absolute;
+				padding: 15px 0;
+				background-color: rgba(0,0,0,0.5);
+				color: white;
+				border-radius: 15px;
+				top: 30px;
+				right: 15px;
+				display: none;
+			}
+			.action_menu ul{
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+			.action_menu ul li{
+				width: 100%;
+				padding: 10px 15px;
+				margin-bottom: 5px;
+			}
+			.action_menu ul li i{
+				padding-right: 10px;
+			}
+			.action_menu ul li:hover{
+				cursor: pointer;
+				background-color: rgba(0,0,0,0.2);
+			}
+			@media(max-width: 576px){
+				.contacts_card{
+				margin-bottom: 15px !important;
+			}
+			}
+		</style>
+		<div class="container-fluid h-100">
+			<div class="row justify-content-center h-100">		
+				<div class="col-md-8 col-xl-6 chat">
+					<div class="card">
+						<div class="card-header msg_head">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+								<a href="https://www.srmist.edu.in/" target="_blank">
+									<img src="{{ url_for('static', filename='images/srmistlogo.png') }}" class="rounded-circle user_img">
+								</a>
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span>SRM Institue of Science & Technology</span>
+									<p>Ask us Anything!</p>
+								</div>
+							</div>
+						</div>
+						<div id="messageFormeight" class="card-body msg_card_body"></div>
+						<div class="card-footer">
+							<form id="messageArea" class="input-group">
+								<input type="text" id="text" name="msg" placeholder="Message SRMingle" autocomplete="off" class="form-control type_msg" required/>
+								<div class="input-group-append">
+									<button type="submit" id="send" class="input-group-text send_btn"><i class="fas fa-location-arrow"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			function typeText(element, text, interval) {
+				let index = 0;
+				function type() {
+					if (index < text.length) {
+						// Use html() to set HTML content, handle HTML entities
+						element.html(element.html() + text[index]);
+						index++;
+						setTimeout(type, interval);
+					}
+				}
+				type();
+			}
+		
+			$(document).ready(function() {
+				$("#messageArea").on("submit", function(event) {
+					const date = new Date();
+					const hour = date.getHours();
+					const minute = date.getMinutes();
+					const str_time = hour + ":" + (minute < 10 ? '0' : '') + minute;
+					var rawText = $("#text").val();
+		
+					var userHtml = '<div class="d-flex justify-content-end mb-4"><div class="msg_cotainer_send">' + rawText + '<span class="msg_time_send">'+ str_time + '</span></div><div class="img_cont_msg"><img src="{{ url_for('static', filename='images/user.png') }}" class="rounded-circle user_img_msg"></div></div>';
+					
+					$("#text").val("");
+					$("#messageFormeight").append(userHtml);
+		
+					$.ajax({
+						data: {
+							msg: rawText,    
+						},
+						type: "POST",
+						url: "/get",
+					}).done(function(data) {
+						var botHtml = '<div class="d-flex justify-content-start mb-4"><div class="img_cont_msg"><img src="{{ url_for('static', filename='images/srmistlogo.png') }}" class="rounded-circle user_img_msg"></div><div class="msg_cotainer"></div></div>';
+						var botMessage = $.parseHTML(botHtml);
+						$("#messageFormeight").append(botMessage);
+						var messageContainer = $(botMessage).find('.msg_cotainer');
+						
+						// Ensure HTML is correctly handled
+						typeText(messageContainer, data, 20);
+		
+						$(botMessage).find('.msg_time').text(str_time);
+					});
+					event.preventDefault();
+				});
+			});
+		</script>
+	
+</body>
+</html>

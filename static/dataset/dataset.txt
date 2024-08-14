@@ -1,0 +1,72 @@
+[welcome]
+Hey Hi Hello | Welcome to SRM University! I'm an AI Chatbot here to help you with any queries related to our university. To get started, you can inquire about SRM University's history, its accreditations, campus life, infrastructure, departments, and more. You may also ask about the admission process, entrance examinations, and contact details of our dedicated help desks.
+
+[established founded introduction aboutsrm aboutsrmuniversity]
+when was university established aboutsrm introduction aboutsrmuniversity founded | SRM University was established in 1985 as SRM Engineering College in Kattankulathur, Tamil Nadu. SRM Institute of Science and Technology is one of the top-ranking universities in India with over 52,000 full-time students and more than 3,200 faculty members across all campuses.
+
+[accreditations rating]
+What how accreditations accredition rating rated does University have? | SRM University is accredited by the National Board of Accreditation (NBA) and has received Grade 'A' accreditation from the National Assessment and Accreditation Council (NAAC). SRMIST stands 4th in Country-Wise and 147th in Worldwide Ranking by UI Metric. SRMIST has been accredited by NAAC with the highest ‘A++’ Grade in the year 2024. SRMIST holds the consecutive No. 1 position among the top engineering institutions, top 125 private engineering institutes, and the top 70 private institutes in placement respectively. SRM found a podium finish in Atal Rankings of Institutions on Innovation Achievements (ARIIA) 2020.
+
+[courses programs degrees electives]
+What types of degree degrees programs course courses and electives does University offer? | SRM University offers a wide range of undergraduate, postgraduate, and doctoral programs in six faculties: Engineering & Technology, Management, Medicine & Health Sciences, Science & Humanities, Law, and Agricultural Sciences.
+
+[locations branches]
+Where are University branches campus campuses locations location located? | SRM University has campuses in Kattankulathur, Ramapuram, Vadapalani (all in and around Chennai), Tiruchirappalli (in Tamil Nadu), Modinagar (in Uttar Pradesh) & Sonepat (in Haryana) near Delhi NCR, Amaravati (in Andhra Pradesh), and Gangtok (in Sikkim).
+
+[campuses campus campuslife]
+how is the campus campuses campuslife | SRM University offers a vibrant campus life with numerous clubs, societies, cultural events, and sports facilities for students. With over 52,000 full-time students and more than 3,200 faculty members across all campuses, it provides a dynamic and engaging environment for learning and personal growth.
+
+[facilities infrastructure]
+What facilities advantages infrastructure does University offer on its better? | SRM University campuses are equipped with modern infrastructure, state-of-the-art facilities, laboratories, libraries, and research centers. Learning is an enjoyable experience here, with experienced faculty, inspiring libraries, stimulating discussion rooms, large playgrounds, and state-of-the-art labs. The campus spans 250 acres of greenery with two lakes and beautiful walkways.
+
+[placements placement companies]
+How are placements at University? | SRM University has an impressive track record of placements, with many reputed companies visiting the campus for recruitment. The university has a dedicated placement cell that works tirelessly to assist students in securing promising career opportunities.
+
+[research publishpapers researchwork]
+How does University support research publishpapers researchwork and innovation? | SRM University fosters a culture of research and innovation through collaborations with industries and research organizations. The university provides extensive support for research work and encourages students and faculty to publish papers and contribute to advancements in their fields.
+
+[international]
+Does University have international collaborations? | Yes, SRM University has numerous collaborations with international universities for student exchange programs, joint degree programs, and research collaborations, providing students with global exposure and opportunities.
+
+[admission enrollment admissionprocess enroll]
+How can I apply for enrollment enroll admissionprocess admission to University? | The admission process at SRM University varies by program. Typically, admissions are based on entrance exams like SRMJEEE. You can visit the official SRM University website for detailed information on the application process and requirements.
+
+[departments depts]
+how many departments depts in university? | SRM University has a wide array of departments across various fields of study, ensuring a diverse and comprehensive educational experience for all students.
+
+[srmjeee]
+what is SRMJEEE srmjeee | SRMJEEE - SRM Joint Entrance Examination is the entrance examination for students seeking admission to undergraduate programs. It includes subjects like Physics, Chemistry, Maths, Aptitude, English - Comprehension, and Biology (optional). To learn more about SRMJEEE, you can ask about the exam dates, phases, and syllabus.
+
+[phases reappear tries]
+How many Phases reappear tries are there in SRMJEEE 2024? | SRMJEEE 2024 will have two phases. The application cost is Rs. 1200 for each phase of SRMJEEE. The mode of payment includes online payment (Debit card, credit card, UPI, Net banking) or DD mode. The application fee is non-refundable.
+
+[examdates entrance examdate entranceexam]
+When will SRMJEEE 2024 Entrance examdates entranceexam date entranceexam be conducted? | SRMJEEE 2024 - Phase I Main Exam: 19.04.2024 (Fri), 20.04.2024 (Sat), 21.04.2024 (Sun). SRMJEEE 2024 - Phase II Main Exam: 21.06.2024 (Fri), 22.06.2024 (Sat), 23.06.2024 (Sun).
+
+[mode of examination exam mode entrance exammode]
+What is the mode of examination exam mode entrance exammode ? | The mode of examination will be online (Remote Proctored Online Mode). Students can write the exam from home using a desktop or laptop. The exam cannot be taken using a mobile phone. The test will be AI-monitored, and proctors will be present. Detailed instructions regarding system configuration and internet speed will be mailed to students and will be available on the website one week before the exam.
+
+[slots examslots]
+How many examslots slots will be available per day during the dates? | There will be three slots per day during the exam dates. When slot booking opens (tentatively two days before the start of the exam), students can book convenient slots and download hall tickets.
+
+[mock tests mock exams]
+Are there any mocktests mockexams mock conducted? | Yes, there will be a mock test conducted before the main exam. Students can take the mock test at their convenience to get familiar with the exam format.
+
+[syllabus examsyllabus exampattern]
+What is the exampattern syllabus examsyllabus of SRMJEEE? | You can find the detailed SRMJEEE syllabus here: [SRMJEEE Syllabus](https://webstor.srmist.edu.in/web_assets/downloads/2024/srmjeee-syllabus.pdf).
+
+[editcoursepreference alreadysubmitted]
+How to editcoursepreference in the application form, which is alreadysubmitted | Course/Campus preference selected at the time of application is only for statistical purposes. The actual course preference can be selected at the time of counseling based on SRMJEEE – All India Rank and availability of seats.
+
+[eligibility requirements]
+What is the eligibility requirements for | For detailed eligibility criteria, please refer to the official guidelines: [Eligibility Criteria](https://www.srmist.edu.in/admission-india/engineering/).
+
+[feestructure fees]
+What is the fees feestructure | For detailed information on the fee structure, please visit: [Fee Structure](https://www.srmist.edu.in/admission-india/engineering/).
+
+[separate application for each phase]
+Do I need to submit a separate application for each phase? | Yes, a separate application must be submitted for each phase of SRMJEEE.
+
+[counseling]
+Will the counseling be held separately? | The counseling will be conducted online for each phase separately. Once allotted, students will need to pay the fees within the stipulated time, and the Provisional Allotment Letter (PAL) will be generated.
+
